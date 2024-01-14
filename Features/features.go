@@ -97,6 +97,7 @@ func (c *Class) AddStudent() {
 }
 
 func (c *Class) ShowStudents() {
+	fmt.Println()
 	for _, student := range c.Students {
 		name, roll, marks := student.Name, student.RollNo, student.Marks
 		fmt.Printf("Name: %s\nRoll No: %s\nMarks: %d\n", name, roll, marks)
